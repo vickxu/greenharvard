@@ -1,0 +1,27 @@
+{% extends "layout-new.html" %}
+
+{% block title %}
+	{{ hdorm }} vs {{hcountry}}
+{% endblock %}
+
+{% block header %} 
+	Compare Dorm and Country
+{% endblock %} 
+
+{% block main %} 
+    <!-- graphs --> 
+    <div class="page-header">
+        <h1>
+            {{ hdorm }} vs {{ hcountry }}
+            {{ country | safe }}
+            <small>
+                Please note that for the country information, 
+                it includes all energy usage by the avaerge person outside of the house. 
+                However, for the dorm information, the energy used is calculated per student usage of the total
+                dorm energy usage</small>
+        </h1>
+    </div>
+{% endblock %}
+
+
+

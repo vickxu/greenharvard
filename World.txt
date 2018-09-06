@@ -1,0 +1,266 @@
+http://data.worldbank.org/indicator/EG.USE.COMM.FO.ZS?locations=AL
+
+Aruba	ABW	
+Andorra	AND	
+Afghanistan	AFG	
+Angola	AGO	226.8404204
+Albania	ALB	2531.888539
+Arab World	ARB	2496.754189
+United Arab Emirates	ARE	10904.45132
+Argentina	ARG	3093.353228
+Armenia	ARM	1870.200843
+American Samoa	ASM	
+Antigua and Barbuda	ATG	
+Australia	AUS	10133.85918
+Austria	AUT	8513.009508
+Azerbaijan	AZE	2092.536521
+Burundi	BDI	
+Belgium	BEL	7966.686748
+Benin	BEN	
+Burkina Faso	BFA	
+Bangladesh	BGD	293.0247113
+Bulgaria	BGR	4639.706323
+Bahrain	BHR	18216.62083
+Bahamas, The	BHS	
+Bosnia and Herzegovina	BIH	3219.012364
+Belarus	BLR	3648.320304
+Belize	BLZ	
+Bermuda	BMU	
+Bolivia	BOL	705.2931409
+Brazil	BRA	2529.30371
+Barbados	BRB	
+Brunei Darussalam	BRN	9703.547275
+Bhutan	BTN	
+Botswana	BWA	1563.512228
+Central African Republic	CAF	
+Canada	CAN	15519.33597
+Central Europe and the Baltics	CEB	4076.017865
+Switzerland	CHE	7807.306054
+Channel Islands	CHI	
+Chile	CHL	3878.905768
+China	CHN	3762.076942
+Cote d'Ivoire	CIV	252.3761139
+Cameroon	CMR	278.0583424
+Congo, Rep.	COG	233.9376115
+Colombia	COL	1177.106432
+Comoros	COM	
+Cabo Verde	CPV	
+Costa Rica	CRI	1954.558792
+Caribbean small states	CSS	
+Cuba	CUB	1425.477921
+Curacao	CUW	5005.785908
+Cayman Islands	CYM	
+Cyprus	CYP	3594.790707
+Czech Republic	CZE	6284.790806
+Germany	DEU	7019.014692
+Djibouti	DJI	
+Dominica	DMA	
+Denmark	DNK	6039.610097
+Dominican Republic	DOM	1516.523807
+Algeria	DZA	1277.374628
+East Asia & Pacific (excluding high income)	EAP	2927.893308
+Early-demographic dividend	EAR	1125.873935
+East Asia & Pacific	EAS	3568.322051
+Europe & Central Asia (excluding high income)	ECA	4201.237662
+Europe & Central Asia	ECS	5429.154098
+Ecuador	ECU	1333.157784
+Egypt, Arab Rep.	EGY	1697.470204
+Euro area	EMU	6490.832687
+Eritrea	ERI	
+Spain	ESP	5401.045838
+Estonia	EST	6664.658569
+Ethiopia	ETH	64.61617032
+European Union	EUU	6035.867809
+Fragile and conflict affected situations	FCS	532.7410601
+Finland	FIN	15509.73235
+Fiji	FJI	
+France	FRA	7373.981154
+Faroe Islands	FRO	
+Micronesia, Fed. Sts.	FSM	
+Gabon	GAB	1167.630401
+United Kingdom	GBR	5407.291323
+Georgia	GEO	2459.745763
+Ghana	GHA	382.3129048
+Gibraltar	GIB	5769.230769
+Guinea	GIN	
+Gambia, The	GMB	
+Guinea-Bissau	GNB	
+Equatorial Guinea	GNQ	
+Greece	GRC	5028.995794
+Grenada	GRD	
+Greenland	GRL	
+Guatemala	GTM	555.038869
+Guam	GUM	
+Guyana	GUY	
+High income	HIC	9083.989426
+Hong Kong SAR, China	HKG	5933.634783
+Honduras	HND	720.9781453
+Heavily indebted poor countries (HIPC)	HPC	
+Croatia	HRV	3754.268698
+Haiti	HTI	48.50809333
+Hungary	HUN	3890.294248
+IBRD only	IBD	2370.922136
+IDA & IBRD total	IBT	1916.487586
+IDA total	IDA	379.5990746
+IDA blend	IDB	572.0692044
+Indonesia	IDN	787.6800174
+IDA only	IDX	240.2081512
+Isle of Man	IMN	
+India	IND	765.0034087
+Not classified	INX	
+Ireland	IRL	5701.897269
+Iran, Islamic Rep.	IRN	2899.000803
+Iraq	IRQ	1780.700392
+Iceland	ISL	54799.17471
+Israel	ISR	6558.719524
+Italy	ITA	5159.183655
+Jamaica	JAM	1126.472509
+Jordan	JOR	2103.860492
+Japan	JPN	7835.603937
+Kazakhstan	KAZ	4892.495131
+Kenya	KEN	167.7161092
+Kyrgyz Republic	KGZ	1887.020071
+Cambodia	KHM	220.7769918
+Kiribati	KIR	
+St. Kitts and Nevis	KNA	
+Korea, Rep.	KOR	10427.88633
+Kosovo	KSV	2917.304002
+Kuwait	KWT	14910.58353
+Latin America & Caribbean (excluding high income)	LAC	2048.846681
+Lao PDR	LAO	
+Lebanon	LBN	3194.066945
+Liberia	LBR	
+Libya	LBY	3922.765879
+St. Lucia	LCA	
+Latin America & Caribbean	LCN	2117.926205
+Least developed countries: UN classification	LDC	190.6429936
+Low income	LIC	
+Liechtenstein	LIE	
+Sri Lanka	LKA	525.8758929
+Lower middle income	LMC	744.5960616
+Low & middle income	LMY	1887.50089
+Lesotho	LSO	
+Late-demographic dividend	LTE	3574.350287
+Lithuania	LTU	3663.671197
+Luxembourg	LUX	14193.16843
+Latvia	LVA	3472.541385
+Macao SAR, China	MAC	
+St. Martin (French part)	MAF	
+Morocco	MAR	866.2383642
+Monaco	MCO	
+Moldova	MDA	1352.792108
+Madagascar	MDG	
+Maldives	MDV	
+Middle East & North Africa	MEA	2880.138986
+Mexico	MEX	2056.964408
+Marshall Islands	MHL	
+Middle income	MIC	2008.495253
+Macedonia, FYR	MKD	3556.500396
+Mali	MLI	
+Malta	MLT	4735.765541
+Myanmar	MMR	164.4652749
+Middle East & North Africa (excluding high income)	MNA	1771.538716
+Montenegro	MNE	5618.095096
+Mongolia	MNG	1908.942932
+Northern Mariana Islands	MNP	
+Mozambique	MOZ	435.5960854
+Mauritania	MRT	
+Mauritius	MUS	2148.328411
+Malawi	MWI	
+Malaysia	MYS	4511.974259
+North America	NAC	13241.34387
+Namibia	NAM	1610.846709
+New Caledonia	NCL	
+Niger	NER	48.64135649
+Nigeria	NGA	141.8730132
+Nicaragua	NIC	598.0847161
+Netherlands	NLD	6821.057683
+Norway	NOR	23325.74681
+Nepal	NPL	128.1481026
+Nauru	NRU	
+New Zealand	NZL	9084.216924
+OECD members	OED	8034.074329
+Oman	OMN	5981.450312
+Other small states	OSS	
+Pakistan	PAK	449.9685931
+Panama	PAN	2038.004742
+Peru	PER	1269.766551
+Philippines	PHL	692.0553461
+Palau	PLW	
+Papua New Guinea	PNG	
+Poland	POL	3937.650584
+Pre-demographic dividend	PRE	271.1725664
+Puerto Rico	PRI	
+Korea, Dem. People’s Rep.	PRK	660.1941982
+Portugal	PRT	4685.054787
+Paraguay	PRY	1473.010759
+Pacific island small states	PSS	
+Post-demographic dividend	PST	8953.776853
+French Polynesia	PYF	
+Qatar	QAT	15470.98732
+Romania	ROU	2494.533918
+Russian Federation	RUS	6539.211202
+Rwanda	RWA	
+South Asia	SAS	672.6381553
+Saudi Arabia	SAU	8741.417641
+Sudan	SDN	158.6586698
+Senegal	SEN	219.252585
+Singapore	SGP	8839.705125
+Solomon Islands	SLB	
+Sierra Leone	SLE	
+El Salvador	SLV	914.9960162
+San Marino	SMR	
+Somalia	SOM	
+Serbia	SRB	4444.222971
+Sub-Saharan Africa (excluding high income)	SSA	488.0592177
+South Sudan	SSD	38.85170088
+Sub-Saharan Africa	SSF	488.0592177
+Small states	SST	
+Sao Tome and Principe	STP	
+Suriname	SUR	
+Slovak Republic	SVK	5202.467288
+Slovenia	SVN	6833.165611
+Sweden	SWE	13870.38991
+Swaziland	SWZ	
+Sint Maarten (Dutch part)	SXM	
+Seychelles	SYC	
+Syrian Arab Republic	SYR	1126.556876
+Turks and Caicos Islands	TCA	
+Chad	TCD	
+East Asia & Pacific (IDA & IBRD countries)	TEA	2956.641376
+Europe & Central Asia (IDA & IBRD countries)	TEC	4174.653048
+Togo	TGO	147.502013
+Thailand	THA	2470.770742
+Tajikistan	TJK	1681.851365
+Turkmenistan	TKM	2602.055538
+Latin America & the Caribbean (IDA & IBRD countries)	TLA	2130.276546
+Middle East & North Africa (IDA & IBRD countries)	TMN	1771.538716
+Timor-Leste	TLS	
+Tonga	TON	
+South Asia (IDA & IBRD)	TSA	672.6381553
+Sub-Saharan Africa (IDA & IBRD countries)	TSS	488.0592177
+Trinidad and Tobago	TTO	6876.372159
+Tunisia	TUN	1434.620861
+Turkey	TUR	2744.844024
+Tuvalu	TUV	
+Tanzania	TZA	89.47800587
+Uganda	UGA	
+Ukraine	UKR	3600.229503
+Upper middle income	UMC	3403.572435
+Uruguay	URY	2985.062364
+United States	USA	12988.25596
+Uzbekistan	UZB	1637.128346
+St. Vincent and the Grenadines	VCT	
+Venezuela, RB	VEN	3245.073787
+British Virgin Islands	VGB	
+Virgin Islands (U.S.)	VIR	
+Vietnam	VNM	1305.577683
+Vanuatu	VUT	
+West Bank and Gaza	PSE	
+World	WLD	3104.382224
+Samoa	WSM	
+Yemen, Rep.	YEM	247.168228
+South Africa	ZAF	4325.520098
+Congo, Dem. Rep.	COD	110.043903
+Zambia	ZMB	731.4664236
+Zimbabwe	ZWE	531.7459444

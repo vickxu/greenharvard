@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet"/>
+
+    <!-- MetisMenu CSS -->
+    <link href="{{ url_for('static', filename='metisMenu.min.css') }}" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='sb-admin-2.css') }}" rel="stylesheet"/>
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- own, not bootstrap things --> 
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"/>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="http://i1124.photobucket.com/albums/l579/fieKrieY/Recycle.png">
+
+    <title>Green: {% block title %}{% endblock %}</title>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand big-title" href="{{ url_for('index') }}">Green Harvard!</a>
+            </div>
+            <!-- /navbar-header -->
+
+            <!-- TOP, ON RIGHT --> 
+            {% if session.user_id %}
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="{{ url_for('logout') }}" class="right">Log Out</a></li>
+                    </ul>
+                    <!-- /dropdown-user -->
+                </li>
+                <!-- /dropdown -->
+            </ul>
+            {% endif %}
+            <!-- /navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                {% if session.user_id %}
+                    <ul class="nav" id="side-menu">
+                        <li><a href="{{ url_for('index') }}"><i class="fa fa-home fa-fw"></i> Home</a></li>
+                        <li><a href="{{ url_for('about') }}"><i class="fa fa-info-circle fa-fw"></i> About</a></li>
+                        <li><a href="{{ url_for('myinfo') }}"><i class="fa fa-group fa-fw"></i> My Dorm and Yard</a></li>
+                        <li>
+                            <a href="#"><i class="fa fa-th fa-fw"></i> Search Data<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="{{ url_for('search') }}">Dorm Data</a></li>
+                                <li><a href="{{ url_for('yard') }}">Yard Data</a></li>
+                            </ul>
+                        </li>
+                        <!-- /search submenu --> 
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Compare Data<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="{{ url_for('search3') }}">Between Dorms</a></li>
+                                <li><a href="{{ url_for('search2') }}">With World</a></li>
+                            </ul> 
+                        </li>
+                        <!-- /compare submenu --> 
+                    </ul>
+                    <!-- /entire side menu if logged in--> 
+                    {% else %}
+                    <ul class="nav" id="side-menu">
+                        <li><a href="{{ url_for('about') }}">about</a></li>
+                        <li><a href="{{ url_for('register') }}">register</a></li>
+                        <li><a href="{{ url_for('login') }}">log in</a></li>
+                    </ul>
+                    <!-- /side menu if not logged in! --> 
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+            
+        <!-- PAGE CONTENT -->
+        <div id="page-wrapper">
+            
+            <div class="container-fluid">
+            	<div class="row">
+            		<div class="col-lg-12">
+            			<h1 class="page-header">{% block header %}{% endblock %}</h1>
+            		</div>
+            		<!-- /12-width column --> 
+            	</div>
+            	<!-- /first row --> 
+            	
+                <div class="row">
+                    
+                    <div class="col-lg-12">
+                        {% block main %}{% endblock %}
+                    </div>
+                    <!-- /main col -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container-fluid -->
+        </div>
+        <!-- /page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{{ url_for('static', filename='metisMenu.min.js') }}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ url_for('static', filename='sb-admin-2.js') }}"></script>
+
+</body>
+
+</html>

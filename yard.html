@@ -1,0 +1,29 @@
+{% extends "layout-new.html" %}
+
+{% block title %}
+	Search Yard Data
+{% endblock %}
+
+{% block header %} 
+	Search Yard Data
+{% endblock %} 
+
+{% block main %} 
+    <!-- inputs -->
+    <form action="{{ url_for('yard') }}" method="post">
+        <fieldset>
+            <div class="form-group wrapper-dropdown">
+                <select name="yard">
+                    <option value="Ivy">Ivy Yard</option>
+                    <option value="Crimson">Crimson Yard</option>
+                    <option value="Elm">Elm Yard</option>
+                    <option value="Oak">Oak Yard</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}
+ 

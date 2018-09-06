@@ -1,0 +1,35 @@
+{% extends "layout-new.html" %}
+
+{% block title %}
+	My Dorm ({{ mydorm }})
+{% endblock %}
+
+{% block header %} 
+	My Dorm Data
+{% endblock %} 
+
+{% block main %} 
+    <div class="container">
+        <!-- graphs (dorm) --> 
+        <div class="page-header">
+            <h2>
+                {{ mydorm }} 
+                {{ chart | safe }}
+                {{ barchart | safe }}
+                {{ table | safe }}
+                <small></small>
+            </h2>
+        </div>
+        <!-- graphs (yard) -->
+        <div class="page-header">
+            <h2>
+                {{ hyard }} Yard
+                {{ chart2 | safe }}
+                <small></small>
+            </h2>
+        </div>
+    </div>
+{% endblock %}
+
+
+

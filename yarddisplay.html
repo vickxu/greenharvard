@@ -1,0 +1,25 @@
+{% extends "layout-new.html" %}
+
+{% block title %}
+	{{ hyard }} Data
+{% endblock %}
+
+{% block header %} 
+	Yard Data
+{% endblock %} 
+
+{% block main %} 
+    <!-- graphs -->
+    <div class="container">
+        <div class="page-header">
+            <h1>
+                {{ hyard }} Yard
+                {{ chart | safe }}
+                <small></small>
+            </h1>
+        </div>
+    </div>
+{% endblock %}
+
+
+

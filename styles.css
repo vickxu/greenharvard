@@ -1,0 +1,77 @@
+/**
+ * Green Harvard - styles.css
+ * Vicky Xu and Rebecca Hao - z_xu@college.harvard.edu, rhao@college.harvard.edu
+ * CS50 Fall 2016
+ */ 
+
+/* SECTION 1: ALTERATIONS -----------------------------------------------------
+   Messing around with otherwise pretty basic things */ 
+
+/* Tint the background brown for earthy feel */ 
+body{
+    background-color:#EFEBE9;
+}
+
+/* Change link color to green for recycling aesthetics */ 
+a{
+    color: #1E8449 !important;
+}
+
+/* Configuring colors of panels (in home)*/ 
+.panel-light{
+    background-color:#73C6B6;
+    color:white;
+}
+
+.panel-mid{
+    background-color:#52BE80;
+    color:white;
+}
+
+.panel-dark{ 
+    background-color:#1E8449;
+    color:white;
+}
+
+/* Make elements inside panel more nicely formatted */ 
+.panel-body{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+/* SECTION 2: NEW THINGS ------------------------------------------------------
+   Our own, or found elsewhere */ 
+
+/* Making "Green Harvard" link at top look like an actual title */ 
+.big-title{
+    font-size:33px;
+    font-weight:bold;
+}
+
+/* For log out to float right, basically */ 
+.right{
+    float:right;
+}
+
+/* Form boxes glow green! 
+   From: http://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow */ 
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+    border-color: rgba(130, 224, 170, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(130, 224, 170, 0.6);
+    outline: 0 none;
+}

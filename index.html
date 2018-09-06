@@ -1,0 +1,197 @@
+{% extends "layout-new.html" %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block header %} 
+	Home
+{% endblock %} 
+
+{% block main %} 
+<form>
+	<div class="row">
+		<div class="col-lg-3 col-md-6">
+			<div class="panel panel-green">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-xs-3">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+						</div>
+						<div class="col-xs-9 text-right">
+							<div class="huge">1.</div>
+							<div>Turn off lights at night!</div>
+						</div>
+					</div>
+				</div>
+				<a href="#">
+                        <div class="panel-footer">
+                            <span class="pull-left">
+                            	Add task: 
+                            	<input type="button" id="1" value="Turn off lights" onclick="createchkboxes(this)"/>
+                            </span>
+                            <div class="clearfix"></div>
+                        </div>
+                </a>
+			</div>
+		</div>
+		<!-- /first task --> 
+		
+		<div class="col-lg-3 col-md-6">
+			<div class="panel panel-dark">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-xs-3">
+							<i class="fa fa-recycle fa-5x"></i>
+						</div>
+						<div class="col-xs-9 text-right">
+							<div class="huge">2.</div>
+							<div>Recycle!</div>
+						</div>
+					</div>
+				</div>
+				<a href="#">
+                        <div class="panel-footer">
+                            <span class="pull-left">
+                            	Add task: 
+                            	<input type="button" id="2" value="Recycle" onclick="createchkboxes(this)"/>
+                            </span>
+                            <div class="clearfix"></div>
+                        </div>
+                </a>
+			</div>
+		</div>
+		<!-- /second task --> 
+		
+		<div class="col-lg-3 col-md-6">
+			<div class="panel panel-mid">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-xs-3">
+							<i class="fa fa-umbrella fa-5x"></i>
+						</div>
+						<div class="col-xs-9 text-right">
+							<div class="huge">3.</div>
+							<div>10 min or shorter shower!</div>
+						</div>
+					</div>
+				</div>
+				<a href="#">
+                        <div class="panel-footer">
+                            <span class="pull-left">
+                            	Add task: 
+                            	<input type="button" id="3" value="Take shorter shower" onclick="createchkboxes(this)"/>
+                            </span>
+                            <div class="clearfix"></div>
+                        </div>
+                </a>
+			</div>
+		</div>
+		<!-- /third task --> 
+		
+		<div class="col-lg-3 col-md-6">
+			<div class="panel panel-light">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-xs-3">
+							<i class="fa fa-cutlery fa-5x"></i>
+						</div>
+						<div class="col-xs-9 text-right">
+							<div class="huge">4.</div>
+							<div>Clean plates all day!</div>
+						</div>
+					</div>
+				</div>
+				<a href="#">
+                        <div class="panel-footer">
+                            <span class="pull-left">
+                            	Add task: 
+                            	<input type="button" id="4" value="Finish all food on plate" onclick="createchkboxes(this)"/>
+                            </span>
+                            <div class="clearfix"></div>
+                        </div>
+                </a>
+			</div>
+		</div>
+		<!-- /fourth task -->
+	</div>
+	<!-- /tasks row --> 
+	
+	<!-- CONTENT HERE --> 
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Tasks to Complete
+				</div>
+				<!-- /panel heading --> 
+				
+				<div class="panel-body">
+					<div class="row">
+						<div id='div1'></div>
+						<!-- script that configures saved tasks in checklist when window opens -->
+						<script>
+							// when the window loads 
+							window.onload = function(){
+								// get the data of the truth values of diff tasks (if have saved them before!)
+							    $.get("/getpythondata", function(data) {
+							        console.log($.parseJSON(data));
+							        var truth_vals = $.parseJSON(data);
+							        
+							        // pre-click the button if true 
+							        for (i = 0; i < 4; i++) { 
+							            var id_i = (i+1).toString(); 
+							            if (truth_vals[i] == 'true') {
+							                document.getElementById(id_i).click();
+							        }
+							    }
+							    })
+							}
+						</script>
+					</div>
+				</div>
+				<!-- /panel body --> 
+			</div>
+			<!-- /panel -->
+		</div>
+		<!-- /checklist col --> 
+</form>
+		
+		<div class="col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Leaderboard
+				</div>
+				<!-- /panel heading --> 
+				<div class="panel-body">
+					<div class="row leaderboard-row">
+						<table class="table table-striped table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>Dorm</th>
+									<th>Points</th>
+								</tr>
+							</thead>
+							
+							{% for dorm in dorm_list %} 
+							<tr>
+								<td>
+									{{ dorm }} 
+								</td>
+								<td>
+									{{ dorm_points[loop.index0] }}
+								</td>
+							</tr>
+							{% endfor %} 
+						</table>
+					</div>
+				</div>
+				<!-- /panel body --> 
+			</div>
+			<!-- panel --> 
+		</div>
+		<!-- /leaderboard col --> 
+	</div>
+	<!-- / leaderboard and checkboxes row --> 
+	
+{% endblock %} 

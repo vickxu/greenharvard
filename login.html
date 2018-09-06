@@ -1,0 +1,34 @@
+{% extends "layout-new.html" %}
+
+{% block title %}
+	Login
+{% endblock %}
+
+{% block header %} 
+	Login!
+{% endblock %} 
+
+{% block main %}
+    <!-- alert box if get an error --> 
+    {% if error_len != 0 %}
+    <div class="alert alert-danger alert-dismissible respect-newline">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        {{ error }} 
+    </div>
+    {% endif %}
+
+    <!-- inputs -->
+    <form action="{{ url_for('login') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text"/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Password" type="password"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Log In</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}
